@@ -1,4 +1,4 @@
-# BallsDex Discord Bot
+# BASIS BallsDex Discord Bot
 
 BallsDex is a bot for collecting countryballs on Discord and exchange them with your friends!
 
