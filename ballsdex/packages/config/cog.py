@@ -43,7 +43,7 @@ class Config(commands.GroupCog):
         channel: discord.TextChannel,
     ):
         """
-        Set or change the channel where countryballs will spawn.
+        Set or change the channel where basisballs will spawn.
         """
         guild = cast(discord.Guild, interaction.guild)  # guild-only command
         user = cast(discord.Member, interaction.user)
@@ -74,7 +74,7 @@ class Config(commands.GroupCog):
     @app_commands.command()
     async def disable(self, interaction: discord.Interaction):
         """
-        Disable or enable countryballs spawning.
+        Disable or enable basisballs spawning.
         """
         guild = cast(discord.Guild, interaction.guild)  # guild-only command
         user = cast(discord.Member, interaction.user)

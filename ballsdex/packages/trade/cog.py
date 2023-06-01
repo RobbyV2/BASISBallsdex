@@ -126,7 +126,7 @@ class Trade(commands.GroupCog):
     @app_commands.command()
     async def add(self, interaction: discord.Interaction, countryball: BallInstanceTransform):
         """
-        Add a countryball to the ongoing trade.
+        Add a basisball to the ongoing trade.
 
         Parameters
         ----------
@@ -177,7 +177,7 @@ class Trade(commands.GroupCog):
     @app_commands.command()
     async def remove(self, interaction: discord.Interaction, countryball: BallInstanceTransform):
         """
-        Remove a countryball from what you proposed in the ongoing trade.
+        Remove a basisball from what you proposed in the ongoing trade.
 
         Parameters
         ----------

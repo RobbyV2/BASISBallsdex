@@ -102,7 +102,7 @@ class Players(commands.GroupCog, group_name=settings.players_group_cog_name):
         sort: SortingChoices | None = None,
     ):
         """
-        List your countryballs.
+        List your basisballs.
 
         Parameters
         ----------
@@ -161,7 +161,7 @@ class Players(commands.GroupCog, group_name=settings.players_group_cog_name):
     @app_commands.checks.cooldown(1, 60, key=lambda i: i.user.id)
     async def completion(self, interaction: discord.Interaction):
         """
-        Show your current completion of the BallsDex.
+        Show your current completion of the Basis BallsDex.
         """
         # Filter disabled balls, they do not count towards progression
         # Only ID and emoji is interesting for us
@@ -250,7 +250,7 @@ class Players(commands.GroupCog, group_name=settings.players_group_cog_name):
     @app_commands.checks.cooldown(1, 5, key=lambda i: i.user.id)
     async def info(self, interaction: discord.Interaction, countryball: BallInstanceTransform):
         """
-        Display info from a specific countryball.
+        Display info from a specific basisball.
 
         Parameters
         ----------
@@ -268,7 +268,7 @@ class Players(commands.GroupCog, group_name=settings.players_group_cog_name):
     @app_commands.checks.cooldown(1, 60, key=lambda i: i.user.id)
     async def last(self, interaction: discord.Interaction):
         """
-        Display info of your last caught countryball.
+        Display info of your last caught basisball.
         """
         await interaction.response.defer(thinking=True)
         try:
@@ -293,7 +293,7 @@ class Players(commands.GroupCog, group_name=settings.players_group_cog_name):
     @app_commands.command()
     async def favorite(self, interaction: discord.Interaction, countryball: BallInstanceTransform):
         """
-        Set favorite countryballs.
+        Set favorite basisballs.
 
         Parameters
         ----------
@@ -345,7 +345,7 @@ class Players(commands.GroupCog, group_name=settings.players_group_cog_name):
         self, interaction: discord.Interaction, policy: app_commands.Choice[int]
     ):
         """
-        Change how you want to receive donations from /balls give
+        Change how you want to receive donations from /basisballs give
 
         Parameters
         ----------
@@ -381,7 +381,7 @@ class Players(commands.GroupCog, group_name=settings.players_group_cog_name):
         countryball: BallInstanceTransform,
     ):
         """
-        Give a countryball to a user.
+        Give a basisball to a user.
 
         Parameters
         ----------

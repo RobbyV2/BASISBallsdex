@@ -101,12 +101,8 @@ class Info(commands.Cog):
             f"**{players_count}** players that caught "
             f"**{balls_instances_count}** {settings.collectible_name}s\n"
             f"**{len(self.bot.guilds)}** servers playing\n\n"
-            "This bot was made by **El Laggron**, consider supporting me on my "
-            "[Patreon](https://patreon.com/retke) :heart:\n\n"
-            f"[Discord server]({settings.discord_invite}) • [Invite me]({invite_link}) • "
+            f"[Invite me]({invite_link}) • "
             f"[Source code and issues]({settings.github_link})\n"
-            f"[Terms of Service]({settings.terms_of_service}) • "
-            f"[Privacy policy]({settings.privacy_policy})"
         )
 
         embed.set_thumbnail(url=self.bot.user.display_avatar.url)

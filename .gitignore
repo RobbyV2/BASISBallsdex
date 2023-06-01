@@ -17,6 +17,7 @@ build
 venv
 .venv
 .python-version
+env
 
 # Visual Studio code settings
 .vscode
