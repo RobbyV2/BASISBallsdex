@@ -101,6 +101,7 @@ class Info(commands.Cog):
             f"**{players_count}** players that caught "
             f"**{balls_instances_count}** {settings.collectible_name}s\n"
             f"**{len(self.bot.guilds)}** servers playing\n\n"
+            "This bot was made by **Robby & Vaedz**, Core by **El Laggron**\n\n"
             f"[Invite me]({invite_link}) • "
             f"[Source code and issues]({settings.github_link})\n"
         )
