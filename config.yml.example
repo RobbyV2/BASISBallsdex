@@ -1,4 +1,3 @@
-
 # paste the bot token after regenerating it here
 discord-token: 
 
@@ -44,30 +43,35 @@ admin-command:
 
   # list of guild IDs where /admin should be registered
   guild-ids:
-      - 1035324247595290674 #Cedar park
-      - 1015409264510124113 #Pflugerville
-      - 1101641166816034937 #Testing
+    - 1035324247595290674 
+    - 1015409264510124113 
+    - 1101641166816034937 
+      #Cedar park
+      #Pflugerville
+      #Testing
 
   # list of role IDs having full access to /admin
   root-role-ids:
-      - 491357175344791562 #Robby
-      - 682725527915855872 #Vaed
-
+    - 491357175344791562 
+    - 682725527915855872 
+      #Robby
+      #Vaed
   # list of role IDs having partial access to /admin
   admin-role-ids:
-      - 866404261340250112 #Akilan
-      - 631615016407269407 #Aarsh
+
 # manage bot ownership
 owners:
+  
   # if enabled and the application is under a team, all team members will be considered as owners
   team-members-are-owners: false
 
   # a list of IDs that must be considered owners in addition to the application/team owner
   co-owners:
+    - 491357175344791562 
+    - 682725527915855872 
 
 # prometheus metrics collection, leave disabled if you don't know what this is
 prometheus:
   enabled: false
   host: "0.0.0.0"
   port: 15260
-  

@@ -249,7 +249,7 @@ class BallInstance(models.Model):
     ) -> str:
         text = self.to_string(bot)
         if not short:
-            text += f" ATK:{self.attack_bonus:+d}% HP:{self.health_bonus:+d}%"
+            text += f" ATK(Account Age):{self.attack_bonus:+d}% HP (Discriminator):{self.health_bonus:+d}%"
         if include_emoji:
             if not bot:
                 raise TypeError(

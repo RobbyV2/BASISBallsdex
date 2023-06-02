@@ -70,7 +70,7 @@ def draw_card(ball_instance: "BallInstance"):
         (30, 1870),
         # Modifying the line below is breaking the licence as you are removing credits
         # If you don't want to receive a DMCA, just don't
-        "BASIS Image Modification by Vaedz\nCreated by El Laggron",
+        "BASIS Image Modification by Vaedz & Robby\nCreated by El Laggron",
         font=credits_font,
         fill=(0, 0, 0, 255),
         stroke_width=0,
