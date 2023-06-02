@@ -43,17 +43,17 @@ admin-command:
 
   # list of guild IDs where /admin should be registered
   guild-ids:
-    - 1035324247595290674 
+    - 1035324247595290674
     - 1015409264510124113
-    - 1101641166816034937 
+    - 1101641166816034937
       #Cedar park
       #Pflugerville
       #Testing
 
   # list of role IDs having full access to /admin
   root-role-ids:
-    - 491357175344791562 
-    - 682725527915855872 
+    - 491357175344791562
+    - 682725527915855872
       #Robby
       #Vaed
       
@@ -68,8 +68,8 @@ owners:
 
   # a list of IDs that must be considered owners in addition to the application/team owner
   co-owners:
-    - 491357175344791562 
-    - 682725527915855872 
+    - 491357175344791562
+    - 682725527915855872
 
 # prometheus metrics collection, leave disabled if you don't know what this is
 prometheus:
