@@ -44,8 +44,9 @@ admin-command:
 
   # list of guild IDs where /admin should be registered
   guild-ids:
-      - 1035324247595290674
-      - 1015409264510124113
+      - 1035324247595290674 #Cedar park
+      - 1015409264510124113 #Pflugerville
+      - 1101641166816034937 #Testing
 
   # list of role IDs having full access to /admin
   root-role-ids:
