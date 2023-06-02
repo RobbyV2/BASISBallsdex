@@ -80,10 +80,6 @@ def draw_card(ball_instance: "BallInstance"):
     artwork = Image.open("." + ball.collection_card)
     image.paste(ImageOps.fit(artwork, artwork_size), CORNERS[0])
 
-    icon = ImageOps.fit(icon, (192, 192))
-    image.paste(icon, (1200, 30), mask=icon)
-
-    icon.close()
     artwork.close()
 
     return image
