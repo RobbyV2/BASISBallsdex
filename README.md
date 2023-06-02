@@ -4,6 +4,12 @@ BallsDex is a bot for collecting countryballs on Discord and exchange them with 
 
 This is a custom fork of the bot for use in a local friend group.
 
+To run with docker use the following commands
+```bash
+docker compose build
+docker compose up
+```
+
 ## License
 
 This repository is released under the [MIT license](https://opensource.org/licenses/MIT).
