@@ -10,6 +10,8 @@ docker compose build
 docker compose up
 ```
 
+To create a terminal with sudo by default, use the following command: `sudo -i`
+
 ## License
 
 This repository is released under the [MIT license](https://opensource.org/licenses/MIT).
