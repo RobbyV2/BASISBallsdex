@@ -44,10 +44,8 @@ admin-command:
   # list of guild IDs where /admin should be registered
   guild-ids:
     - 1035324247595290674 
-    - 1015409264510124113 
     - 1101641166816034937 
       #Cedar park
-      #Pflugerville
       #Testing
 
   # list of role IDs having full access to /admin
@@ -56,6 +54,7 @@ admin-command:
     - 682725527915855872 
       #Robby
       #Vaed
+      
   # list of role IDs having partial access to /admin
   admin-role-ids:
 
@@ -72,6 +71,6 @@ owners:
 
 # prometheus metrics collection, leave disabled if you don't know what this is
 prometheus:
-  enabled: false
+  enabled: true
   host: "0.0.0.0"
   port: 15260
