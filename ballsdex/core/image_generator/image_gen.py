@@ -18,7 +18,7 @@ RECTANGLE_HEIGHT = (HEIGHT // 5) * 2
 CORNERS = ((34, 261), (1393, 992))
 artwork_size = [b - a for a, b in zip(*CORNERS)]
 
-title_font = ImageFont.truetype(str(SOURCES_PATH / "ArsenicaTrial-Extrabold.ttf"), 170)
+title_font = ImageFont.truetype(str(SOURCES_PATH / "Geologica-SemiBold.ttf"), 170)
 capacity_name_font = ImageFont.truetype(str(SOURCES_PATH / "Bobby Jones Soft.otf"), 110)
 capacity_description_font = ImageFont.truetype(str(SOURCES_PATH / "OpenSans-Semibold.ttf"), 75)
 stats_font = ImageFont.truetype(str(SOURCES_PATH / "Bobby Jones Soft.otf"), 130)
@@ -28,8 +28,18 @@ credits_font = ImageFont.truetype(str(SOURCES_PATH / "arial.ttf"), 40)
 def draw_card(ball_instance: "BallInstance"):
     ball = ball_instance.countryball
     ball_health = (237, 115, 101, 255)
-    image = Image.open(str(SOURCES_PATH / "basis.png"))
-
+    
+    if ball.regime == Regime.BASISCP:
+      image = Image.open(str(SOURCES_PATH / "basis.png"))
+    elif ball.regime == Regime.TEACHER:
+      image = Image.open(str(SOURCES_PATH / "basisteacher.png"))
+    elif ball.regime == Regime.NONBASIS:
+      image = Image.open(str(SOURCES_PATH / "nonbasis.png")) 
+    elif ball.regime == Regime.BASISOTHER:
+      image = Image.open(str(SOURCES_PATH / "basisother.png"))
+    else:
+      raise RuntimeError(f"Classification unknown: {ball.regime}")
+    
     draw = ImageDraw.Draw(image)
     draw.text((50, 20), ball.short_name or ball.country, font=title_font)
     for i, line in enumerate(textwrap.wrap("About Me", width=28)):
