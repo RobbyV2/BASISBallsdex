@@ -59,9 +59,10 @@ class GuildConfig(models.Model):
 
 
 class Regime(IntEnum):
-    DEMOCRACY = 1
-    DICTATORSHIP = 2
-    UNION = 3
+    BASISCP = 1
+    TEACHER = 2
+    NONBASIS = 3
+    BASISOTHER = 4
 
 
 class Economy(IntEnum):
