@@ -84,9 +84,11 @@ class Special(models.Model):
     rarity = fields.FloatField(
         description="Value between 0 and 1, chances of using this special background."
     )
-    democracy_card = fields.CharField(max_length=200)
-    dictatorship_card = fields.CharField(max_length=200)
-    union_card = fields.CharField(max_length=200)
+    BASISCP_card = fields.CharField(max_length=200)
+    TEACHER_card = fields.CharField(max_length=200)
+    NONBASIS_card = fields.CharField(max_length=200)
+    BASISOTHER_card = fields.CharField(max_length=200)
+
     emoji = fields.CharField(
         max_length=20,
         description="Either a unicode character or a discord emoji ID",
@@ -97,12 +99,15 @@ class Special(models.Model):
         return self.name
 
     def get_background(self, regime: Regime) -> str | None:
-        if regime == Regime.DEMOCRACY:
-            return self.democracy_card
-        elif regime == Regime.DICTATORSHIP:
-            return self.dictatorship_card
-        elif regime == Regime.UNION:
-            return self.union_card
+        if regime == Regime.BASISCP:
+            return self.BASISCP_card
+        elif regime == Regime.TEACHER:
+            return self.TEACHER_card
+        elif regime == Regime.NONBASIS:
+            return self.NONBASIS_card
+        elif regime == Regime.BASISOTHER:
+            return self.BASISOTHER_card
+
         else:
             return None
 
