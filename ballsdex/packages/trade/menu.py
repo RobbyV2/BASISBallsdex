@@ -323,6 +323,9 @@ class TradeMenu:
         if self.task:
             self.task.cancel()
 
+        for countryball in self.trader1.proposal + self.trader2.proposal:
+            self.bot.locked_balls.remove(countryball.id)
+
         self.current_view.stop()
         for item in self.current_view.children:
             item.disabled = True
@@ -381,7 +384,7 @@ class TradeMenu:
 
         for countryball in valid_transferable_countryballs:
             await countryball.save()
-
+            self.bot.locked_balls.remove(countryball.id)
     async def confirm(self, trader: TradingUser) -> bool:
         """
         Mark a user's proposal as accepted. If both user accept, end the trade now
