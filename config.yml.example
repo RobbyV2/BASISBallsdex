@@ -46,9 +46,11 @@ admin-command:
     - 1035324247595290674
     - 1015409264510124113
     - 1101641166816034937
+    - 1118417049799102515
       #Cedar park
       #Pflugerville
       #BBE Testing
+      #Testing V2
 
   # list of role IDs having full access to /admin
   root-role-ids:
@@ -73,6 +75,6 @@ owners:
 
 # prometheus metrics collection, leave disabled if you don't know what this is
 prometheus:
-  enabled: true
+  enabled: false
   host: "0.0.0.0"
   port: 15260
