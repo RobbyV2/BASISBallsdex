@@ -16,7 +16,7 @@ To stop the bot use `Control + C`, then run the following to make sure the bot i
 docker compose down
 ```
 
-To delete all containers use `docker rm $(docker ps -a -q)`
+To delete all containers use `docker system prune -a --volumes`
 
 To create a terminal with sudo by default, use the following command: `sudo -i`
 
