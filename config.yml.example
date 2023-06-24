@@ -62,8 +62,6 @@ admin-command:
 
 # manage bot ownership
 owners:
-  - 495422553167233024
-  - 682725527915855872
   
   # if enabled and the application is under a team, all team members will be considered as owners
   team-members-are-owners: false
