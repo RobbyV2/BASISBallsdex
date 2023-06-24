@@ -7,9 +7,9 @@ CREATE TABLE IF NOT EXISTS "special" (
     "start_date" TIMESTAMPTZ NOT NULL,
     "end_date" TIMESTAMPTZ NOT NULL,
     "rarity" DOUBLE PRECISION NOT NULL,
-    "BASISCP_card" VARCHAR(200) NOT NULL,
-    "TEACHER_card" VARCHAR(200) NOT NULL,
-    "NONBASIS_card" VARCHAR(200) NOT NULL,
+    "democracy_card" VARCHAR(200) NOT NULL,
+    "dictatorship_card" VARCHAR(200) NOT NULL,
+    "union_card" VARCHAR(200) NOT NULL,
     "BASISOTHER_card" VARCHAR(200) NOT NULL
 );
 COMMENT ON COLUMN "special"."catch_phrase" IS 'Sentence sent in bonus when someone catches a special card';
