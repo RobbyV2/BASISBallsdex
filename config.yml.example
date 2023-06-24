@@ -48,11 +48,11 @@ admin-command:
     - 1101641166816034937
       #Cedar park
       #Pflugerville
-      #Testing
+      #BBE Testing
 
   # list of role IDs having full access to /admin
   root-role-ids:
-    - 491357175344791562
+    - 495422553167233024
     - 682725527915855872
       #Robby
       #Vaed
@@ -62,13 +62,15 @@ admin-command:
 
 # manage bot ownership
 owners:
+  - 495422553167233024
+  - 682725527915855872
   
   # if enabled and the application is under a team, all team members will be considered as owners
   team-members-are-owners: false
 
   # a list of IDs that must be considered owners in addition to the application/team owner
   co-owners:
-    - 491357175344791562
+    - 495422553167233024
     - 682725527915855872
 
 # prometheus metrics collection, leave disabled if you don't know what this is
