@@ -53,11 +53,8 @@ admin-command:
       #Testing V2
 
   # list of role IDs having full access to /admin
-  root-role-ids:
-    - 495422553167233024
-    - 682725527915855872
-      #Robby
-      #Vaed
+  root-role-ids: 
+    - 1122567306329989150
       
   # list of role IDs having partial access to /admin
   admin-role-ids:
