@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
-# import yarl (Docker build doesn't like unused imports)
+import yarl
 import math
 
 from typing import cast

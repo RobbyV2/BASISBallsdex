@@ -27,7 +27,7 @@ env
 *.rdb
 
 # static
-static
+# static (Hosting on Ubuntu doesn't give write access?)
 
 # cache
 .pytest_cache

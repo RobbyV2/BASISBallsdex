@@ -3,7 +3,7 @@ from pathlib import Path
 import textwrap
 from PIL import Image, ImageFont, ImageDraw, ImageOps
 from typing import TYPE_CHECKING
-from ballsdex.core.models import Regime#, Economy (Remove # when using economy)
+from ballsdex.core.models import Regime, Economy 
 
 if TYPE_CHECKING:
     from ballsdex.core.models import BallInstance
