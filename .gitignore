@@ -10,6 +10,10 @@ __pycache__
 dist
 build
 
+# Extras
+/extras/env
+/extras/config.json
+
 # log files
 *.log*
 
