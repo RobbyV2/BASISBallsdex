@@ -10,6 +10,7 @@ from typing import cast
 import aiohttp
 import discord
 import discord.gateway
+from cachetools import TTLCache
 from discord import app_commands
 from discord.ext import commands
 from rich import print
@@ -69,7 +70,7 @@ class BallsDexBot(commands.AutoShardedBot):
         self._shutdown = 0
         self.blacklist: set[int] = set()
         self.blacklist_guild: set[int] = set()
-        self.locked_balls: set[int] = set()
+        self.locked_balls = TTLCache(maxsize=99999, ttl=60 * 30)
 
     async def start_prometheus_server(self):
         self.prometheus_server = PrometheusServer(
@@ -104,12 +105,12 @@ class BallsDexBot(commands.AutoShardedBot):
     async def load_cache(self):
         balls.clear()
         for ball in await Ball.all():
-            balls.append(ball)
+            balls[ball.pk] = ball
         log.info(f"Loaded {len(balls)} balls")
 
         specials.clear()
         for special in await Special.all():
-            specials.append(special)
+            specials[special.pk] = special
         log.info(f"Loaded {len(specials)} specials")
 
         self.blacklist = set()

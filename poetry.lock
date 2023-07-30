@@ -373,6 +373,18 @@ jupyter = ["ipython (>=7.8.0)", "tokenize-rt (>=3.2.0)"]
 uvloop = ["uvloop (>=0.15.2)"]
 
 [[package]]
+name = "cachetools"
+version = "5.3.1"
+description = "Extensible memoizing collections and decorators"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "cachetools-5.3.1-py3-none-any.whl", hash = "sha256:95ef631eeaea14ba2e36f06437f36463aac3a096799e876ee55e5cdccb102590"},
+    {file = "cachetools-5.3.1.tar.gz", hash = "sha256:dce83f2d9b4e1f732a8cd44af8e8fab2dbe46201467fc98b3ef8f269092bf62b"},
+]
+
+[[package]]
 name = "cfgv"
 version = "3.3.1"
 description = "Validate configuration and produce human readable error messages."
@@ -586,7 +598,7 @@ test = ["anyio[trio] (>=3.2.1,<4.0.0)", "black (==23.1.0)", "coverage[toml] (>=6
 
 [[package]]
 name = "fastapi-admin"
-version = "1.0.4"
+version = "1.0.5"
 description = "A fast admin dashboard based on FastAPI and TortoiseORM with tabler ui, inspired by Django admin."
 category = "main"
 optional = false
@@ -609,8 +621,8 @@ uvicorn = {version = "*", extras = ["standard"]}
 [package.source]
 type = "git"
 url = "https://github.com/fastapi-admin/fastapi-admin"
-reference = "5f34bf0d7356afa4c6034a7ab3942ea843d3b8ce"
-resolved_reference = "5f34bf0d7356afa4c6034a7ab3942ea843d3b8ce"
+reference = "0ed771026c776138aceb4ae98eeb5c976786a193"
+resolved_reference = "0ed771026c776138aceb4ae98eeb5c976786a193"
 
 [[package]]
 name = "filelock"
@@ -1840,4 +1852,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "e04c67e66fd204126c03d553f18c52ffca432479820ba1fa3f0f80a77d07b539"
+content-hash = "e09c985874220dac2263344860efb6f857775c1b081bb2941a9ec4fbb8f9401e"

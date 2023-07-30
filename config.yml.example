@@ -47,10 +47,12 @@ admin-command:
     - 1015409264510124113
     - 1101641166816034937
     - 1118417049799102515
+    - 1118295925396353025
       #Cedar park
       #Pflugerville
       #BBE Testing
       #Testing V2
+      #Nova Gaia 3
 
   # list of role IDs having full access to /admin
   root-role-ids: 
