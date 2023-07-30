@@ -155,8 +155,8 @@ class BallResource(Model):
             search_mode="icontains",
             placeholder="Search for balls",
         ),
-        filters.Enum(enum=Regime, name="regime", label="Regime"),
-        filters.Enum(enum=Economy, name="economy", label="Economy"),
+        filters.ForeignKey(model=Regime, name="regime", label="Regime"),
+        filters.ForeignKey(model==Economy, name="economy", label="Economy"),
         filters.Boolean(name="enabled", label="Enabled"),
         filters.Boolean(name="tradeable", label="Tradeable"),
     ]
@@ -199,19 +199,6 @@ class BallResource(Model):
             name="capacity_description",
             label="Capacity description",
         ),
-        # Field(
-        #     name="capacity_logic",
-        #     label="Capacity logic",
-        #     input_=inputs.Json(
-        #         null=True,
-        #         options={
-        #             "schema": ref,
-        #             "allowSchemaSuggestions": "true",
-        #             "mode": "tree",
-        #             "modes": ["tree", "view", "form", "code", "text", "preview"],
-        #         },
-        #     ),
-        # ),
     ]
 
     async def get_actions(self, request: Request) -> List[Action]:
